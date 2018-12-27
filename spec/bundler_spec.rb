@@ -23,8 +23,10 @@ describe "Bundler" do
     end
 
     # http://bundler.io/v1.3/gemfile.html
+    # it "should list the hashie gem without specifying a version" do
+    #   expect(@gemfile_text =~ /gem ['"]hashie['"]$/).not_to eq(nil)
     it "should list the hashie gem without specifying a version" do
-      expect(@gemfile_text =~ /gem ['"]hashie['"]$/).not_to eq(nil)
+      expect(@gemfile_text =~ /gem .hashie.\r\n?|\n|$/).not_to eq(nil)
     end
 
     # http://bundler.io/v1.3/gemfile.html
