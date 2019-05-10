@@ -1,12 +1,16 @@
 source "https://rubygems.org"
-gem "rspec"
+#gem "rspec"
 gem "sinatra","1.4.4"
 gem "hashie"
 gem "octokit","~>2.0"
-gem "awesome_print", :git=>"http://github.com/awesome_print/awesome_print"  #private gem [SHH version]
+gem "awesome_print", git:"git@github.com:awesome-print/awesome_print.git"  #private gem [SHH version]
 
 
 
 group :development do
-gem "pry"
+  gem "pry"
+end
+
+group :test do
+  gem "rspec"
 end
