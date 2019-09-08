@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/awesome-print/awesome_print.git
+  remote: git@github.com:awesome-print/awesome_print.git
   revision: 4564fd74721562cbef2443f7d97109bf9192343d
   specs:
     awesome_print (1.8.0)
@@ -53,7 +53,7 @@ DEPENDENCIES
   hashie
   octokit (~> 2.0)
   pry
-  rspec
+  rspec (~> 3.8)
   sinatra (= 1.4.4)
 
 BUNDLED WITH
