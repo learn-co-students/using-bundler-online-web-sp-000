@@ -38,9 +38,9 @@ describe "Bundler" do
     end
 
     # http://bundler.io/git.html
-    # it "should list the awesome_print gem specifying a remote git repository (use github)" do
-    #   expect(@gemfile_text =~ /gem ['"]awesome_print['"], ?(git:|:git ?=>) ?['"]git@github\.com:awesome\-print\/awesome_print\.git['"]/).not_to eq(nil)
-    # end
+    it "should list the awesome_print gem specifying a remote git repository (use github)" do
+      expect(@gemfile_text =~ /gem ['"]awesome_print['"], ?(git:|:git ?=>) ?['"]git@github\.com:awesome\-print\/awesome_print\.git['"]/).not_to eq(nil)
+    end
 
     describe "groups" do
       after :each do
@@ -97,8 +97,8 @@ describe "Bundler" do
       expect(@environment_text =~ /Bundler\.require\(:default, :development\)/).not_to eq(nil)
     end
 
-    # it "should make the bundler gems available in bin/run.rb" do
-    #   expect { require_relative "../bin/run.rb" }.not_to raise_error
-    # end
+    it "should make the bundler gems available in bin/run.rb" do
+      expect { require_relative "../bin/run.rb" }.not_to raise_error
+    end
   end
 end
