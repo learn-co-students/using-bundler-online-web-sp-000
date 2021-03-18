@@ -1,13 +1,14 @@
 source "https://rubygems.org"
-source "https://github.com
 
 group :test do 
-gem "rspec"
-end 
-
-gem "sinatra", '1.4.4'
-gem "hashie"'~>2.0', "https://github.com/hashie/hashie" 
-
-group :development do
+    gem "rspec" 
+  end
+  
+group :development do  
+gem "sinatra", '1.4.4' 
+gem "hashie"
 gem "pry"
+gem "octokit", '~>2.0'
+gem "awesome_print"
+#, https://github.com/awesome-print/awesome_print
 end 
