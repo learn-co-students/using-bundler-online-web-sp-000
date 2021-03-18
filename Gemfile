@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 source "https://github.com
 
+group :test do 
 gem "rspec"
 end 
 
