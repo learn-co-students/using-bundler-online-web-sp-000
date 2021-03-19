@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+require_relative "../bin/run.rb"
 
 gem 'pry', :group => :development do 
 
