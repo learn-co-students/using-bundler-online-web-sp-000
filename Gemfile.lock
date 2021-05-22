@@ -1,8 +1,8 @@
 GIT
-  remote: https://github.com/awesome-print/awesome_print/
-  revision: 0d7b6debde49e17ac712936c08370f5f6521b884
+  remote: git@github.com:awesome-print/awesome_print.git
+  revision: 8a7ff0aabacbebf694c3e27242809219a96d5a3b
   specs:
-    awesome_print (1.8.0)
+    awesome_print (1.9.2)
 
 GEM
   remote: https://rubygems.org/
@@ -57,4 +57,4 @@ DEPENDENCIES
   sinatra (= 1.4.4)
 
 BUNDLED WITH
-   2.0.1
+   2.2.11
